@@ -7,14 +7,16 @@
     <script>
         var input1 = prompt("how high should i count up to?");
         var sum = 0;
-        for (var i = 0; i<input1; i++) {
-            document.write("<p>Point A:i is" + i);
+        var j = 0;
+        while (j <= input1) {
+
+            document.write("<p>Point A:i is" + j);
             document.write("<p>Point A:sum  is" + sum);
-            sum += i;
+            sum += j++;
             document.write("<p>Point B:sum  is" + sum);
        }
         document.write(sum);
-        document.write("<hr><p>Point C:i  is" + i);
+        document.write("<hr><p>Point C:i  is" + j);
     </script>
 </body>
 </html>
